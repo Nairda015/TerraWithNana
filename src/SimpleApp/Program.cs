@@ -10,6 +10,5 @@ builder.Services.RegisterHandlers<IApiMarker>();
 var app = builder.Build();
 
 app.RegisterEndpoints<IApiMarker>();
-app.MapGet("/", () => "Hello from SimpleApp!");
 
 app.Run();
