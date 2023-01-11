@@ -23,6 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "terraform", "terraform", "{
 		tools\terraform\providers.tf = tools\terraform\providers.tf
 		tools\terraform\terraform.tfvars = tools\terraform\terraform.tfvars
 		tools\terraform\terraform-dev.tfvars = tools\terraform\terraform-dev.tfvars
+		tools\terraform\entry-script.sh = tools\terraform\entry-script.sh
 	EndProjectSection
 EndProject
 Global
