@@ -1,0 +1,12 @@
+variable "subnet_cidr_block" { type = string }
+variable "avail_zone" { type = string }
+variable "owner_login" { type = string }
+variable "app_name" { type = string }
+variable "env_prefix" { type = string }
+variable "vpc_id" { type = string }
+variable "subnet_id" { type = string }
+variable "instance_type" { type = string }
+variable "my_ip" { type = string }
+variable "public_key_path" { type = string }
+variable "image_name" { type = string }
+variable "server_name" { type = string }

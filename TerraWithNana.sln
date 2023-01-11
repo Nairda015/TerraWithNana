@@ -20,10 +20,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "terraform", "terraform", "{
 	ProjectSection(SolutionItems) = preProject
 		tools\terraform\main.tf = tools\terraform\main.tf
 		tools\terraform\README.md = tools\terraform\README.md
-		tools\terraform\providers.tf = tools\terraform\providers.tf
 		tools\terraform\terraform.tfvars = tools\terraform\terraform.tfvars
 		tools\terraform\terraform-dev.tfvars = tools\terraform\terraform-dev.tfvars
+		tools\terraform\outputs.tf = tools\terraform\outputs.tf
+		tools\terraform\variables.tf = tools\terraform\variables.tf
 		tools\terraform\entry-script.sh = tools\terraform\entry-script.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{A997DCB3-CC69-416E-B899-908007BADE46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webserver", "webserver", "{0BD4374F-2934-4D15-95FA-68BAED33F466}"
+	ProjectSection(SolutionItems) = preProject
+		tools\terraform\modules\webserver\main.tf = tools\terraform\modules\webserver\main.tf
+		tools\terraform\modules\webserver\outputs.tf = tools\terraform\modules\webserver\outputs.tf
+		tools\terraform\modules\webserver\variables.tf = tools\terraform\modules\webserver\variables.tf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "subnet", "subnet", "{AE1F4429-EF46-45D3-B152-2DEEB1C3F5CA}"
+	ProjectSection(SolutionItems) = preProject
+		tools\terraform\modules\subnet\main.tf = tools\terraform\modules\subnet\main.tf
+		tools\terraform\modules\subnet\outputs.tf = tools\terraform\modules\subnet\outputs.tf
+		tools\terraform\modules\subnet\variables.tf = tools\terraform\modules\subnet\variables.tf
 	EndProjectSection
 EndProject
 Global
@@ -35,6 +52,9 @@ Global
 		{8BB9E700-6CF7-4A9E-8E91-4BDA53F651E8} = {DB9E6651-9E36-4372-A181-9BC6A849FFAB}
 		{78804247-163A-440E-9C34-308D645E5627} = {92A53848-F9F6-4FFA-B316-16F27458B91F}
 		{DA006C09-7417-4169-85AB-E032CB21643F} = {6AEDB204-6CA0-48C6-AFCA-B674EF244AD0}
+		{A997DCB3-CC69-416E-B899-908007BADE46} = {DA006C09-7417-4169-85AB-E032CB21643F}
+		{0BD4374F-2934-4D15-95FA-68BAED33F466} = {A997DCB3-CC69-416E-B899-908007BADE46}
+		{AE1F4429-EF46-45D3-B152-2DEEB1C3F5CA} = {A997DCB3-CC69-416E-B899-908007BADE46}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8BB9E700-6CF7-4A9E-8E91-4BDA53F651E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
